@@ -10,4 +10,4 @@ To change the color of the graph simply edit the line  `c = "RdBu"` in the
 python code. `c` is simply the name of a [matplotlib
 colormap](https://matplotlib.org/stable/tutorials/colors/colormaps.html)
 
-![]("./RdBu.jpeg")
+![](RdBu.jpeg)
