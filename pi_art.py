@@ -54,14 +54,16 @@ print("Generating graph")
 
 c = "RdBu"
 plt.clf()
+plt.xlim([-187, 212])
+plt.ylim([-96, 646])
+plt.gca().set_aspect('equal', adjustable='box')
 colors = plt.cm.get_cmap(c)(np.linspace(0, 1, nb_points))
 for i in range(nb_points):
     plt.plot(x[i:i+2], y[i:i+2], c = colors[i], alpha = 1, linewidth = 0.1)
-plt.axis("square")
 plt.axis("off")
 name = c + ".jpeg"
 namesvg = c + ".svg"
 print("Saving jpeg")
-plt.savefig(name, dpi=6000)
+plt.savefig(name, bbox_inches="tight", dpi=6500, pad_inches=0.5)
 print("Saving svg")
 plt.savefig(namesvg)

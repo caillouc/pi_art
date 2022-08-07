@@ -11,3 +11,5 @@ python code. `c` is simply the name of a [matplotlib
 colormap](https://matplotlib.org/stable/tutorials/colors/colormaps.html)
 
 ![](RdBu_low.jpeg)
+
+> `BrBG` and `flag` colors look also very good
